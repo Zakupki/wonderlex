@@ -1,0 +1,150 @@
+/* --------------- gallery --------------- */
+.gallery {
+    padding: 25px 0 221px;
+    position: relative;
+    text-align: center;
+}
+
+.gallery__header {
+    font: bold 36px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 73px;
+}
+
+.gallery__layout {
+    overflow: hidden;
+    min-height: 300px;
+    position: relative;
+}
+.gallery__column {
+    position: absolute;
+    top: 0;
+}
+.gallery__item {
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+.gallery__item_new:after,
+.gallery__item_best:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../img/gallery__item_best.png");
+    width: 61px;
+    height: 63px;
+    z-index: 1000;
+}
+.gallery__item_new:after {
+    background: url("../img/gallery__item_new.png");
+}
+.gallery__pic {
+    display: block;
+    width: 430px;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery__pic_min {
+    width: 200px;
+}
+
+.gallery__preloader {
+    height: 50px;
+    position: absolute;
+    width: 137px;
+    margin-left: -68.5px;
+    bottom: 123px;
+    left: 50%;
+    background: url("../img/gallery__preloader.gif") no-repeat left center;
+}
+.gallery__data {
+    position: absolute;
+    bottom: -129px;
+    height: 100px;
+    width: 374px;
+    background: #000;
+    padding: 29px 28px 0;
+}
+
+.gallery__data_without-price .gallery__title {
+    margin-top: 20px;
+}
+
+.gallery__title,
+.gallery__title:visited {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+    color: #fff;
+}
+.gallery__lnk,
+.gallery__lnk:visited {
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+}
+.gallery__lnk:hover {
+    opacity: 1;
+}
+.gallery__wrap-element {
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+}
+.gallery__price {
+    color: #fff;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+    font-size: 18px;
+}
+.gallery__auction {
+    background: url("../img/gallery__auction.png");
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border: none;
+    bottom: 23px;
+    right: 72px;
+}
+.gallery__cart {
+    background: url("../img/gallery__cart.png");
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border: none;
+    bottom: 23px;
+    right: 30px;
+}
+
+.btn__gallery-more2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 123px;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    padding: 0 40px;
+    color: #000;
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* --------------- gallery --------------- */

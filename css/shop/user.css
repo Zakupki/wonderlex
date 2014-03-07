@@ -1,0 +1,69 @@
+body {background: #ede5d7;}
+.layout-header {background-color: #ee6536; background-image: url(/uploads/layout-header.gif);}
+.layout-header-bot {background-image: url(/uploads/layout-header-bot-ede5d7.png);}
+.m1 .jdrop-title,
+.m1 .jdrop-open .jdrop-arrow {background-image: url(/uploads/jdrop-arrow-2d8084.png);}
+.catalog .buy span {color: #ee6536;}
+.catalog .buy .i {background-image: url(/uploads/buy-ee6536.png);}
+.pager .prev .i {background-image: url(/uploads/prev-ee6536.png);}
+.pager .next .i {background-image: url(/uploads/next-ee6536.png);}
+.news .jswap-prev {background-image: url(/uploads/prev-ee6536.png);}
+.news .jswap-next {background-image: url(/uploads/next-ee6536.png);}
+a,
+a:hover {color: #2d8084;}
+.events-block .bg-top,
+.events-block .bg-bot {background-image: url(/uploads/events-block-bg-ee6536.png);}
+.m1 .jdrop-open .jdrop-title a,
+.m1 .jdrop-open .jdrop-title a:hover {color: #2d8084;}
+.bn {background: #000;}
+.events-widget {background: #ee6536;}
+.contacts-widget a,
+.contacts-widget a:hover {color: #ee6536;}
+.services .more-link a,
+.services .more-link a:hover {color: #ee6536;}
+.services .more-link .i {background-image: url(/uploads/gallery-ee6536.png);}
+.button a,
+.button span,
+.button button {background: #ee6536;}
+.catalog-widget .buy span {color: #ee6536;}
+.catalog-widget .buy .i {background-image: url(/uploads/buy-ee6536.png);}
+.pager a,
+.pager a:hover {color: #ee6536;}
+.events .more a,
+.events .more a:hover {color: #ee6536;}
+
+
+
+/*
+body {background: #ede5d7; background-image: url(../../img/px.gif);}
+
+a {color: #2d8084;}
+a:hover {color: #449ea1;}
+
+.events-widget,
+.button a,
+.button span,
+.button button {background: #ee6536;}
+
+.button a:hover,
+.button span:hover,
+.button button:hover {background: #ffce85;}
+
+.events .more-link a,
+.services .more-link a,
+.catalog .buy-link span,
+.catalog-widget .buy-link span,
+.product-links .buy-link span,
+.product-links .like-link span,
+.product-links .dislike-link span {color: #ee6536;}
+
+.events .more-link a:hover,
+.services .more-link a:hover,
+.catalog .buy-link span:hover,
+.catalog-widget .buy-link span:hover,
+.product-links .buy-link span:hover,
+.product-links .like-link span:hover,
+.product-links .dislike-link span:hover {color: #ffce85;}
+
+.bn {background: #717171;}
+*/

@@ -1,0 +1,5 @@
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+.photosgallery-captions .sliderkit-btn-disable a{filter:alpha(opacity=30);}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{filter:alpha(opacity=40);}

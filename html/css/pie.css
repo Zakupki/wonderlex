@@ -1,0 +1,21 @@
+.main-menu__item,
+.main-menu__sub,
+.btn,
+.authors__gallery-pic,
+.authors-list__sort-popup,
+.authors-list__new,
+.about__pdf,
+.about__quote-pic,
+.jui-custom-select,
+.item__view-preview_select,
+.profile-history__header-control-wrap,
+.switch__slider .ui-slider-handle,
+.ui-slider-handle a,
+.switch__slider,
+.profile__packet-info-text,
+.profile__packet-improve,
+.profile__packet-name {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

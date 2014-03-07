@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tween-max.min.js"></script>
+    <script src="js/iscroll-min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.profile.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css">
+    <link rel="stylesheet" href="css/main.ie.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+                <div class="header__cube header__cube_rus">
+                    <div class="header__item header__item_rus">
+
+                        <!-- logo -->
+                        <a href="#" class="logo"><img src="img/logo.png" width="148" height="18" alt="wonderlex"></a>
+                        <!-- /logo -->
+
+                        <!-- language -->
+                        <div class="language">
+                            <a class="language__lnk language__lnk_active" href="index_en.html" data-action="header__cube_en">en</a>
+                        </div>
+                        <!-- /language -->
+
+                        <!-- main-menu -->
+                        <nav class="main-menu">
+                            <ol class="main-menu__layout">
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">каталог</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">аукцион</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Авторы</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">события</a></li>
+                                <li class="main-menu__item main-menu__item_sub">
+                                    <span class="main-menu__lnk main-menu__lnk_sub">о wonderlex</span>
+                                    <ul class="main-menu__sub">
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">дополнительный подраздел 1</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 2</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 3</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 4</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </nav>
+                        <!-- /main-menu -->
+
+                        <!-- account -->
+                        <div class="account">
+                            <div class="account__login" data-php="php/login-form.php">вход</div>
+                            или
+                            <div class="account__registration" data-php="php/registration-form.php">регистрация</div>
+                        </div>
+                        <!-- /account -->
+
+                        <!-- search -->
+                        <form class="search" id="search" action="#">
+
+                        </form>
+                        <!-- /search -->
+
+                    </div>
+                    <div class="header__item header__item_en">
+
+                        <!-- logo -->
+                        <h1 class="logo"><img src="img/logo.png" width="148" height="18" alt="wonderlex"></h1>
+                        <!-- /logo -->
+
+                        <!-- language -->
+                        <div class="language">
+                            <a class="language__lnk" href="index.html"  data-action="header__cube_rus">ru</a>
+                        </div>
+                        <!-- /language -->
+
+                        <!-- main-menu -->
+                        <nav class="main-menu">
+                            <ol class="main-menu__layout">
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">catalog</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">auction</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">authors</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">events</a></li>
+                                <li class="main-menu__item main-menu__item_sub"><span class="main-menu__lnk main-menu__lnk_sub">about</span></li>
+                            </ol>
+                        </nav>
+                        <!-- /main-menu -->
+
+                        <!-- account -->
+                        <div class="account">
+                            <div class="account__login">login</div>
+                            or
+                            <div class="account__registration">signup</div>
+                        </div>
+                        <!-- /account -->
+
+                        <!-- search -->
+                        <form class="search" action="#">
+
+                        </form>
+                        <!-- /search -->
+
+                    </div>
+                </div>
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- profile -->
+                    <section class="profile">
+
+                        <!-- profile header -->
+                        <header class="profile__header-wrap">
+                            <h2 class="profile__header">ваш w-сайт</h2>
+                            <span class="profile__header-text">Спасибо за участие!</span>
+
+                            <div class="profile__packet-control">
+                                <div class="profile__packet-name">Simple</div><a href="#" class="profile__packet-improve">Улучшить</a>
+                            </div>
+
+                        </header>
+                        <!--/profile header -->
+
+                        <!-- packet list -->
+                        <div id="profile-packet-list" class="profile__packet-list_hidden">
+                            <ul class="profile__packet-list">
+
+                            <li class="profile__packet-list-item">
+                                <div class="profile__packet-cell-wrap">
+                                    <div class="profile__packet-item-wrap">
+                                        <div class="profile__packet-item-name">
+                                            Basic
+                                            <div class="profile__packet-info">
+                                                <div class="profile__packet-info-text">
+                                                    <div class="privasy">
+                                                        <h2 class="privasy__title privasy__title_empty">Информация</h2>
+                                                        <div class="scroll-inner scroll-privacy">
+                                                            <div>
+                                                                <div class="privasy__layout">
+                                                                    <p class="privasy__txt">
+                                                                        Соц-дем характеристика аудитории, отбрасывая подробности, стабилизирует эмпирический рекламный бриф, учитывая результат
+                                                                        предыдущих медиа-кампаний. Таргетирование конструктивно.
+                                                                    </p>
+                                                                    <p class="privasy__txt">
+                                                                        Пак-шот нетривиален. Рекламный клаттер пока плохо восстанавливает конвергентный инвестиционный продукт,
+                                                                    </p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует
+                                                                        креативный целевой сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический
+                                                                        медиамикс, осознавая социальную ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая</p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Рекламный клаттер абстрактен. Изменение глобальной стратегии, как принято считать, амбивалентно. Такое понимание
+                                                                        ситуации восходит к Эл Райс, при этом перераспределение бюджета изящно синхронизирует комплексный фактор коммуникации, используя опыт
+                                                                        предыдущих кампаний. Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует креативный целевой
+                                                                        сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический медиамикс, осознавая социальную
+                                                                        ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="profile__packet-item-description">базовый аккаунт</span>
+
+                                        <div class="profile__packet-cost">free</div>
+                                    </div>
+                                    <div class="profile__packet-button-wrap">
+                                        <a href="#" class="profile__packet-button">купить</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="profile__packet-list-item">
+                                <div class="profile__packet-cell-wrap">
+                                    <div class="profile__packet-item-wrap">
+                                        <div class="profile__packet-item-name">Simple</div>
+                                        <span class="profile__packet-item-description">осталось 12 дней</span>
+
+                                        <div class="profile__packet-cost">$29<span class="profile__packet-sup">в год</span></div>
+                                    </div>
+                                    <div class="profile__packet-button-wrap">
+                                        <a href="#" class="profile__packet-button">продлить</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="profile__packet-list-item">
+
+                                <div class="profile__packet-cell-wrap">
+                                    <div class="profile__packet-item-wrap">
+                                        <div class="profile__packet-item-name">
+                                            PRO
+                                            <div class="profile__packet-info">
+                                                <div class="profile__packet-info-text">
+                                                    <div class="privasy">
+                                                        <h2 class="privasy__title privasy__title_empty">Информация</h2>
+                                                        <div class="scroll-inner scroll-privacy">
+                                                            <div>
+                                                                <div class="privasy__layout">
+                                                                    <p class="privasy__txt">
+                                                                        Соц-дем характеристика аудитории, отбрасывая подробности, стабилизирует эмпирический рекламный бриф, учитывая результат
+                                                                        предыдущих медиа-кампаний. Таргетирование конструктивно.
+                                                                    </p>
+                                                                    <p class="privasy__txt">
+                                                                        Пак-шот нетривиален. Рекламный клаттер пока плохо восстанавливает конвергентный инвестиционный продукт,
+                                                                    </p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует
+                                                                        креативный целевой сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический
+                                                                        медиамикс, осознавая социальную ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая</p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Рекламный клаттер абстрактен. Изменение глобальной стратегии, как принято считать, амбивалентно. Такое понимание
+                                                                        ситуации восходит к Эл Райс, при этом перераспределение бюджета изящно синхронизирует комплексный фактор коммуникации, используя опыт
+                                                                        предыдущих кампаний. Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует креативный целевой
+                                                                        сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический медиамикс, осознавая социальную
+                                                                        ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="profile__packet-item-description">+40 проектов</span>
+                                        <span class="profile__packet-item-description">+5 категорий</span>
+
+                                        <div class="profile__packet-cost">$49<span class="profile__packet-sup">в год</span></div>
+                                    </div>
+
+                                    <div class="profile__packet-button-wrap">
+                                        <a href="#" class="profile__packet-button">купить</a>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="profile__packet-list-item">
+                                <div class="profile__packet-cell-wrap">
+                                    <div class="profile__packet-item-wrap">
+                                        <div class="profile__packet-item-name">Unlim</div>
+                                        <span class="profile__packet-item-description">Unlim проектов</span>
+                                        <span class="profile__packet-item-description">и категорий</span>
+
+                                        <div class="profile__packet-cost">$129<span class="profile__packet-sup">в год</span></div>
+                                    </div>
+                                    <div class="profile__packet-button-wrap">
+                                        <a href="#" class="profile__packet-button">продлить</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="profile__packet-list-item active">
+                                <div class="profile__packet-cell-wrap">
+                                    <div class="profile__packet-item-wrap">
+                                        <div class="profile__packet-item-name">
+                                            content
+                                            <div class="profile__packet-info">
+                                                <div class="profile__packet-info-text">
+                                                    <div class="privasy">
+                                                        <h2 class="privasy__title privasy__title_empty">Информация</h2>
+                                                        <div class="scroll-inner scroll-privacy">
+                                                            <div>
+                                                                <div class="privasy__layout">
+                                                                    <p class="privasy__txt">
+                                                                        Соц-дем характеристика аудитории, отбрасывая подробности, стабилизирует эмпирический рекламный бриф, учитывая результат
+                                                                        предыдущих медиа-кампаний. Таргетирование конструктивно.
+                                                                    </p>
+                                                                    <p class="privasy__txt">
+                                                                        Пак-шот нетривиален. Рекламный клаттер пока плохо восстанавливает конвергентный инвестиционный продукт,
+                                                                    </p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует
+                                                                        креативный целевой сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический
+                                                                        медиамикс, осознавая социальную ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая</p>
+                                                                    <h2 class="privasy__sub-title">пункт 1.1.</h2>
+                                                                    <p class="privasy__txt">Рекламный клаттер абстрактен. Изменение глобальной стратегии, как принято считать, амбивалентно. Такое понимание
+                                                                        ситуации восходит к Эл Райс, при этом перераспределение бюджета изящно синхронизирует комплексный фактор коммуникации, используя опыт
+                                                                        предыдущих кампаний. Такое понимание ситуации восходит к Эл Райс, при этом социальный статус спорадически программирует креативный целевой
+                                                                        сегмент рынка, полагаясь на инсайдерскую информацию. Личность топ менеджера упорядочивает стратегический медиамикс, осознавая социальную
+                                                                        ответственность бизнеса.
+                                                                    </p>
+                                                                    <p class="privasy__txt">Повышение жизненных стандартов, как следует из вышесказанного, недостижимо. Несмотря на сложности, маркетинговая </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="profile__packet-item-description">поддержка и обновлениевашего w-сайта</span>
+
+                                        <div class="profile__packet-cost">$129<span class="profile__packet-sup">в год</span></div>
+                                    </div>
+                                    <div class="profile__packet-button-wrap">
+                                        <a href="#" class="profile__packet-button">продлить</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        </div>
+                        <!--/packet list -->
+
+                        <h3 class="profile__content-header">Данные для доступа</h3>
+
+                        <!-- data to access -->
+                        <ul class="profile__access">
+
+                            <li class="profile__access-item">
+                                <div class="profile__access-header">ваш ID</div>
+                                <div class="profile__access-value">W23254354y9</div>
+                            </li>
+
+                            <li class="profile__access-item">
+                                <div class="profile__access-header">ваш сайт</div>
+                                <div class="profile__access-value">W29.wonderlex.com</div>
+                            </li>
+
+                            <li class="profile__access-item">
+                                <div class="profile__access-header">логин</div>
+                                <div class="profile__access-value">info@gmail.com</div>
+                            </li>
+
+                            <li class="profile__access-item">
+                                <div class="profile__access-header">Пароль</div>
+                                <div class="profile__access-value">Qg7Sj16s</div>
+                            </li>
+
+                        </ul>
+                        <!--/data to access -->
+
+                        <h3 class="profile__content-header">руководство пользователя</h3>
+
+                        <!-- use instruction -->
+                        <ul class="profile__user-instruction">
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img1.png" alt="" width="250" height="160" />
+                                </a>
+                                PDF версия руководства
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                            <li class="profile__user-instruction-item">
+                                <a href="#" class="profile__user-instruction-item-wrap">
+                                    <img src="pic/profile-service-img2.png" alt="" width="250" height="160" />
+                                </a>
+                                #23984923
+                            </li>
+
+                        </ul>
+                        <!--/use instruction -->
+
+                        <h3 class="profile__content-header">история оплат</h3>
+
+                        <!-- history payment -->
+                        <ul class="profile__history-payment">
+
+                            <li class="profile__history-payment-item profile__history-payment-item_header">
+                                <div class="profile__history-payment-name">Описание</div>
+                                <div class="profile__history-payment-price">Сумма</div>
+                                <div class="profile__history-payment-date">Дата</div>
+                                <div class="profile__history-payment-check">PDF-Чек</div>
+                            </li>
+
+                            <li class="profile__history-payment-item">
+                                <div class="profile__history-payment-name">жажда общения с методом</div>
+                                <div class="profile__history-payment-price">28 900 грн</div>
+                                <div class="profile__history-payment-date">12.03.2013</div>
+                                <a href="#" class="profile__history-payment-check">PDF-Чек</a>
+                            </li>
+
+                            <li class="profile__history-payment-item">
+                                <div class="profile__history-payment-name">жажда общения с методом</div>
+                                <div class="profile__history-payment-price">28 900 грн</div>
+                                <div class="profile__history-payment-date">12.03.2013</div>
+                                <a href="#" class="profile__history-payment-check">PDF-Чек</a>
+                            </li>
+
+                            <li class="profile__history-payment-item">
+                                <div class="profile__history-payment-name">жажда общения с методом</div>
+                                <div class="profile__history-payment-price">28 900 грн</div>
+                                <div class="profile__history-payment-date">12.03.2013</div>
+                                <a href="#" class="profile__history-payment-check">PDF-Чек</a>
+                            </li>
+
+                            <li class="profile__history-payment-item">
+                                <div class="profile__history-payment-name">жажда общения с методом</div>
+                                <div class="profile__history-payment-price">28 900 грн</div>
+                                <div class="profile__history-payment-date">12.03.2013</div>
+                                <a href="#" class="profile__history-payment-check">PDF-Чек</a>
+                            </li>
+
+
+                        </ul>
+                        <!--/history payment -->
+
+                    </section>
+                    <!--/profile -->
+
+                    <!-- social -->
+                    <div class="social">
+                        <ul class="social__menu">
+                            <li class="social__item social__item_active">
+                                <span class="social__item-btn social__item-btn_facebook">Facebook</span>
+                            </li>
+                            <li class="social__item">
+                                <span class="social__item-btn social__item-btn_vk">Вконтакте</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="social__tweeter">tweeter</a>
+                        <a href="#" class="social__rss">rss</a>
+
+                        <ul class="social__content">
+                            <li class="social__content-item">
+                                <div class="fb-like-box" data-href="http://www.facebook.com/platform" data-border-color="#ffffff" data-width="1833" data-show-faces="true" data-stream="false" data-header="false"></div>
+                            </li>
+                            <li class="social__content-item">
+                                <!-- VK Widget -->
+                                <script type="text/javascript" src="//vk.com/js/api/openapi.js?75"></script>
+                                <div id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", {mode: 0, width: "1833", height: "258"}, 20003922);
+                                </script>
+                                <!-- V/K Widget -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+            <div class="footer__copyright">&copy; 2012 «<span class="footer__copyright-item">Wonderlex</span>»</div>
+
+            <!-- main-menu -->
+            <nav class="main-menu main-menu_footer">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item"><a class="main-menu__lnk main-menu__lnk_privacy" href="php/show-privacy.php">Правила конфиденциальности</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="php/show-privacy.php">пользовательское соглашение</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- for facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- /for facebook -->
+
+</body>
+</html>

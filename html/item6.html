@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/author-profile.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.1.custom.css">
+    <link rel="stylesheet" href="css/item.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tween-max.min.js"></script>
+    <script src="js/iscroll-min.js"></script>
+
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+
+    <script src="js/jquery.gallery.js"></script>
+    <script src="js/jquery.authors-profile.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.item.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css">
+    <link rel="stylesheet" href="css/main.ie.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "b8837325-130e-4e7d-889a-bf67f11bdb71",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+                <div class="header__cube header__cube_rus">
+                    <div class="header__item header__item_rus">
+
+                        <!-- logo -->
+                        <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="148" height="18" alt="wonderlex"></a>
+                        <!-- /logo -->
+
+                        <!-- language -->
+                        <div class="language">
+                            <a class="language__lnk language__lnk_active" href="index_en.html" data-action="header__cube_en">en</a>
+                        </div>
+                        <!-- /language -->
+
+                        <!-- main-menu -->
+                        <nav class="main-menu">
+                            <ol class="main-menu__layout">
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">каталог</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">аукцион</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Авторы</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">события</a></li>
+                                <li class="main-menu__item main-menu__item_sub">
+                                    <span class="main-menu__lnk main-menu__lnk_sub">о wonderlex</span>
+                                    <ul class="main-menu__sub">
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">дополнительный подраздел 1</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 2</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 3</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 4</a>
+                                        </li>
+                                        <li class="main-menu__sub-title">
+                                            <a class="main-menu__sub-lnk" href="#">подраздел 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </nav>
+                        <!-- /main-menu -->
+
+                        <!-- account -->
+                        <div class="account">
+                            <div class="account__profile">
+                                <span>Профиль</span>
+                                <div class="account__profile-menu">
+                                    <ul class="account__profile-list">
+                                        <li class="account__profile-item">
+                                            <a href="#" class="account__profile-lnk">Настройки</a>
+                                        </li>
+                                        <li class="account__profile-item">
+                                            <a href="#" class="account__profile-lnk">История</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="account__profile-part">Принять участие</a>
+                                    <a href="#" class="account__profile-exit">Выход</a>
+                                </div>
+                            </div>
+                            <div class="account__cart">Корзина <span class="account__cart-count">3</span></div>
+                        </div>
+                        <!-- /account -->
+
+                        <!-- search -->
+                        <div class="search" id="search" data-php="php/search-form.php"></div>
+                        <!-- /search -->
+
+                    </div>
+                    <div class="header__item header__item_en">
+
+                        <!-- logo -->
+                        <h1 class="logo"><img src="img/logo.png" width="148" height="18" alt="wonderlex"></h1>
+                        <!-- /logo -->
+
+                        <!-- language -->
+                        <div class="language">
+                            <a class="language__lnk" href="index.html"  data-action="header__cube_rus">ru</a>
+                        </div>
+                        <!-- /language -->
+
+                        <!-- main-menu -->
+                        <nav class="main-menu">
+                            <ol class="main-menu__layout">
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">catalog</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">auction</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">authors</a></li>
+                                <li class="main-menu__item"><a class="main-menu__lnk" href="#">events</a></li>
+                                <li class="main-menu__item main-menu__item_sub"><span class="main-menu__lnk main-menu__lnk_sub">about</span></li>
+                            </ol>
+                        </nav>
+                        <!-- /main-menu -->
+
+                        <!-- account -->
+                        <div class="account">
+                            <div class="account__login">login</div>
+                            or
+                            <div class="account__registration">signup</div>
+                        </div>
+                        <!-- /account -->
+
+                        <!-- search -->
+                        <form class="search" action="#">
+
+                        </form>
+                        <!-- /search -->
+
+                    </div>
+                </div>
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- item -->
+                    <div class="item">
+
+                        <!-- item view wrap -->
+                        <div class="item__view-wrap">
+
+                            <!-- item view -->
+                            <div id="item-view" class="item__view">
+
+                                <div id="item-view-photo" class="item__view-photo">
+                                    <img src="pic/item-photo-img1.jpg" width="890" height="598" alt="" />
+                                    <div class="item__view-photo-right"></div>
+                                    <div class="item__view-photo-left"></div>
+                                </div>
+
+                                <div class="item__view-preview">
+
+                                    <ul class="item__view-preview-list">
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img1.jpg" width="110" height="90" alt="" data-src="pic/item-photo-img2.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img2.jpg" width="70" height="90" alt="" data-src="pic/item-photo-img3.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img3.jpg" width="90" height="90" alt="" data-src="pic/item-photo-img4.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item item__view-preview-item_active">
+                                            <img src="pic/item-photo-preview-img4.jpg" width="150" height="90" alt="" data-src="pic/item-photo-img1.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img5.jpg" width="120" height="90" alt="" data-src="pic/item-photo-img5.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img6.jpg" width="150" height="90" alt="" data-src="pic/item-photo-img6.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img7.jpg" width="110" height="90" alt="" data-src="pic/item-photo-img7.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img8.jpg" width="150" height="90" alt="" data-src="pic/item-photo-img8.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img9.jpg" width="120" height="90" alt="" data-src="pic/item-photo-img9.jpg" />
+                                        </li>
+                                        <li class="item__view-preview-item">
+                                            <img src="pic/item-photo-preview-img10.jpg" width="120" height="90" alt="" data-src="pic/item-photo-img10.jpg" />
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!--/item view -->
+
+                            <!-- item view description -->
+                            <div class="item__view-description">
+                                <a href="#" class="item__view-description-back">вернуться</a>
+                                <h2 class="item__view-header">Жажда общения с методом<span class="item__view-header-year">2013</span></h2>
+
+                                <div class="item__view-tags">
+                                    <a href="#" class="item__view-tags-item">Архитектура,</a>
+                                    <a href="#" class="item__view-tags-item">Скульптура,</a>
+                                    <a href="#" class="item__view-tags-item">Живопись</a>
+                                </div>
+
+                                <div class="item__view-materials">
+                                    <span class="item__view-materials-item">Картон, акрил</span>
+                                    <span class="item__view-materials-item">60 Х 80 см</span>
+                                    <span class="item__view-materials-item">2012</span>
+                                </div>
+
+                                <p class="item__view-description-text">
+                                    Маркетинговая активность естественно трансформирует анализ рыночных цен, отвоевывая свою долю рынка. Поисковая реклама усиливает продвигаемый инвестиционный продукт, расширяя долю рынка. Как отмечает Майкл Мескон, маркетинговая активность разнородно концентрирует жизненный цикл продукции.
+                                </p>
+
+                                <!-- item view -->
+                                <div class="item__view-price-wrap">
+                                    <span class="item__view-price">$ 2 890</span>
+                                    <div class="item__view-price-buttons">
+                                        <button class="btn item__view-price_like" data-php="php/item-like.php" data-id="13">378</button>
+                                        <a href="#" class="btn item__view-price_order">Заказать</a>
+                                    </div>
+                                </div>
+                                <!--/item view -->
+
+                                <!-- author reference -->
+                                <div class="item__view-author">
+
+                                    <a href="#" class="item__view-author-wrap">
+                                        <img src="pic/19_d71a18050738017a192c4fe4674d119a.jpg" width="45" height="45" alt="" />
+                                    </a>
+
+                                    <div class="item__view-author-href">
+                                        <a href="#" class="item__view-author-name">Наташа Егорова</a>
+                                        <a href="#" class="item__view-author-site">Сайт автора</a>
+                                    </div>
+
+                                </div>
+                                <!--/author reference -->
+
+                                <!-- social likes -->
+                                <div class="item__view-social-network-like">
+                                    <ul class="item__view-social-network-list">
+                                        <span class="item__view-social-network-list-item st_vkontakte_hcount" displayText="Like"></span>
+                                        <span class="item__view-social-network-list-item st_fblike_hcount" displayText="Like"></span>
+                                        <span class="item__view-social-network-list-item st_twitter_hcount" displayText="Tweet"></span>
+                                        <span class="item__view-social-network-list-item st_pinterest_hcount" displayText="Pin it"></span>
+                                        <!--li class="item__view-social-network-list-item"><img src="pic/authors-profile-socila-network.png" width="75" height="21" alt="" /> </li>
+                                        <li class="item__view-social-network-list-item"><img src="pic/authors-profile-socila-network-twitter.png" width="96" height="21" alt="" /> </li>
+                                        <li class="item__view-social-network-list-item"><img src="pic/punit.png" width="40" height="21" alt="" /></li-->
+                                    </ul>
+                                </div>
+                                <!--/social likes -->
+
+                            </div>
+                            <!--/item view description -->
+
+                        </div>
+                        <!--/item view wrap -->
+
+                        <!-- gallery -->
+                        <div class="gallery">
+                            <h3 class="gallery__header">Похожие работы</h3>
+                            <div class="gallery__layout">
+                                <ul class="gallery__column">
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item gallery__item_best" data-id="1">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img1.jpg" width="200" height="170" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item gallery__item_new" data-id="2">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img11.jpg" width="200" height="150" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="3">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img3.jpg" width="200" height="270" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="4">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img4.jpg" width="200" height="170" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="5">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img5.jpg" width="200" height="250" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <li class="gallery__item" data-id="6">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img6.jpg" width="200" height="250" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="7">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img7.jpg" width="200" height="270" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="8">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img8.jpg" width="200" height="170" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="9">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img9.jpg" width="200" height="250" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <li class="gallery__item" data-id="10">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img10.jpg" width="200" height="130" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="11">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img2.jpg" width="200" height="250" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                    <!-- gallery item -->
+                                    <li class="gallery__item" data-id="12">
+                                        <div class="gallery__wrap-element">
+                                            <a class="gallery__pic-lnk" href="#"><img class="gallery__pic_min" src="pic/item-img12.jpg" width="200" height="250" alt=""></a>
+                                            <section class="gallery__data">
+                                                <a href="#" class="gallery__title">maya presentation</a>
+                                                <a class="gallery__lnk" href="#">наташа егорова</a>
+                                                <div class="gallery__price">459 грн</div>
+                                                <a href="#" class="gallery__auction"></a>
+                                                <a href="#" class="gallery__cart"></a>
+                                            </section>
+                                        </div>
+                                    </li>
+                                    <!--/gallery item -->
+
+                                </ul>
+                            </div>
+                            <input type="button" class="btn btn__gallery-more2" id="btn__gallery-more" data-step="12" data-php="php/add-pic.php" data-mode="more"  value="Показать еще">
+                        </div>
+                        <!-- /gallery -->
+
+                        <!-- authors profile comments -->
+                        <div id="authors-profile-comments" class="authors-profile-comments" data-php="php/authors-comments.php" data-value="5">
+
+                            <h3 class="authors-profile-comments__header">Коментарии<span class="authors-profile-comments__count">67</span></h3>
+
+                            <ul class="authors-profile-comments__list">
+                                <li class="authors-profile-comments__item-description">
+                                    <a href="#" class="authors-profile-comments__author-photo authors-profile-comments__author-photo_positive"><img src="pic/authors-profile-img3.jpg" alt="" width="45" height="45" /></a>
+                                    <div class="authors-profile-comments__item-text">
+                                        <p class="authors-profile-comments__item-paragraph">Фокусировка, как принято считать, притягивает контент, используя опыт предыдущих кампаний. PR отражает потребительский процесс стратегического планирования, повышая конкуренцию.</p>
+                                        <time class="authors-profile-comments__item-date" datetime="2011-04-12T12:39">12.04.2011, 12:39</time>
+                                        <span class="authors-profile-comments__item-like">7</span>
+                                    </div>
+                                </li>
+
+                                <li class="authors-profile-comments__item-description">
+                                    <a href="#" class="authors-profile-comments__author-photo authors-profile-comments__author-photo_neutral"><img src="pic/authors-profile-img2.jpg" alt="" width="45" height="45" /></a>
+                                    <div class="authors-profile-comments__item-text">
+                                        <p class="authors-profile-comments__item-paragraph">Как отмечает Майкл Мескон, искусство медиапланирования конструктивно. Стимулирование сбыта без оглядки на авторитеты оправдывает диктат потребителя, используя опыт предыдущих кампаний. Интересно отметить, что привлечение аудитории искажает нестандартный подход, осознавая социальную ответственность бизнеса. Оценка эффективности кампании, пренебрегая деталями, однородно нейтрализует фирменный стиль, учитывая современные тенденции.</p>
+                                        <time class="authors-profile-comments__item-date" datetime="2011-04-12T12:39">12.04.2011, 12:39</time>
+                                        <span class="authors-profile-comments__item-like">2</span>
+                                    </div>
+                                </li>
+
+                                <li class="authors-profile-comments__item-description authors-profile-comments__item-opacity">
+                                    <a href="#" class="authors-profile-comments__author-photo authors-profile-comments__author-photo_negative"><img src="pic/authors-profile-img4.jpg" alt="" width="45" height="45" /></a>
+                                    <div class="authors-profile-comments__item-text">
+                                        <p class="authors-profile-comments__item-paragraph">Как отмечает Майкл Мескон, искусство медиапланирования конструктивно. Стимулирование сбыта без оглядки на авторитеты оправдывает диктат потребителя, используя опыт предыдущих кампаний. Интересно отметить, что привлечение аудитории искажает нестандартный подход, осознавая социальную ответственность бизнеса. Оценка эффективности кампании, пренебрегая деталями, однородно нейтрализует фирменный стиль, учитывая современные тенденции.</p>
+                                        <time class="authors-profile-comments__item-date" datetime="2011-04-12T12:39">12.04.2011, 12:39</time>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <span class="btn authors-profile-comments_button" id="btn__comments-more" data-php="php/add-pic.php" data-mode="more">Показать еще</span>
+
+                            <div class="authors-profile-comments__write">
+                                <h3 class="authors-profile-comments__write-header">Оставить комментарий</h3>
+
+                                <div id="authors-profile-comments-photo" class="authors-profile-comments__author-photo authors-profile-comments_write authors-profile-comments_photo-write">
+                                    <img src="pic/authors-profile-img5.jpg" alt="" width="45" height="45" />
+                                </div>
+
+                                <form id="authors-profile-comments-form" action="php/send-comment.php" class="authors-profile-comments__write-field">
+                                    <textarea name="description" class="authors-profile-comments__textarea"></textarea>
+                                    <div class="authors-profile-comments__write-controls">
+                                        <span class="authors-profile-comments__write-label authors-profile-comments__write-positive"></span>
+                                        <span class="authors-profile-comments__write-label authors-profile-comments__write-neutral"></span>
+                                        <span class="authors-profile-comments__write-label authors-profile-comments__write-negative"></span>
+                                        <span class="authors-profile-comments__error-send">Ошибка отправки сообщения</span>
+                                        <input class="authors-profile-comments__submit" type="submit" value="Отправить" />
+                                        <input id="authors-profile-comments-attitude-type" type="hidden" name="attitude" value="neutral" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--/authors profile comments -->
+
+
+                    </div>
+                    <!--/item -->
+
+                    <!-- social -->
+                    <div class="social">
+                        <ul class="social__menu">
+                            <li class="social__item social__item_active">
+                                <span class="social__item-btn social__item-btn_facebook">Facebook</span>
+                            </li>
+                            <li class="social__item">
+                                <span class="social__item-btn social__item-btn_vk">Вконтакте</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="social__tweeter">tweeter</a>
+                        <a href="#" class="social__rss">rss</a>
+
+                        <ul class="social__content">
+                            <li class="social__content-item">
+                                <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-border-color="#ffffff" data-width="1833" data-show-faces="true" data-stream="false" data-show-border="true" data-header="false"></div>
+                            </li>
+                            <li class="social__content-item">
+                                <!-- VK Widget -->
+                                <script type="text/javascript" src="//vk.com/js/api/openapi.js?75"></script>
+                                <div id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", {mode: 0, width: "1833", height: "258"}, 20003922);
+                                </script>
+                                <!-- V/K Widget -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+            <div class="footer__copyright">&copy; 2012 «<span class="footer__copyright-item">Wonderlex</span>»</div>
+
+            <!-- main-menu -->
+            <nav class="main-menu main-menu_footer">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item"><a class="main-menu__lnk main-menu__lnk_privacy" href="php/show-privacy.php">Правила конфиденциальности</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="php/show-privacy.php">пользовательское соглашение</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- for facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- /for facebook -->
+
+</body>
+</html>

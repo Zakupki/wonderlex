@@ -1,0 +1,57 @@
+html,
+body {height: 100%; margin: 0; padding: 0; cursor: text; background: transparent;}
+
+#page {padding: 20px; outline: none;}
+
+body,
+input,
+button,
+select,
+textarea {font: 13px Georgia, serif; color: #514f4a;}
+body {line-height: 16px;}
+
+a {color: #ee6536; text-decoration: none;}
+a:hover {color: #ffce85;}
+
+embed,
+video,
+iframe,
+object {width: auto; max-width: 100%;}
+video,
+iframe {height: auto;}
+
+p,
+pre,
+table,
+iframe, 
+object,
+blockquote {margin: 0 0 16px;}
+
+pre,
+code {font-family: Courier, 'Courier New', monospace; margin-left: 40px;}
+
+blockquote {font-style: italic; color: #8e8c83; margin-left: 32px;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 13px; line-height: 16px; font-weight: normal; color: #292825; margin: 0 0 16px;}
+h1 {font-size: 21px; line-height: 24px;}
+h2 {font-size: 17px; line-height: 20px;}
+h3 {font-size: 15px; line-height: 18px;}
+
+ol,
+ul {margin: 0 0 16px 20px; padding: 0;}
+ol {padding-left: 20px;}
+ul,
+ul li {list-style: none outside none; display: block;}
+ul {padding-left: 0;}
+ul li {padding-left: 20px; background: url(../img/li.gif) no-repeat 4px 4px;}
+
+dd {margin-left: 40px;}
+dt {font-weight: bold;}
+
+hr {color: #f4ede1; background: #f4ede1; height: 1px; margin: 16px 0; overflow: hidden; border: 0; display: block;}
+
+table {border-spacing: 0; border-collapse: collapse;}
+th,
+td {text-align: left; padding: 10px 9px; border: 1px solid #f4ede1;}
+th,
+thead td {font-weight: bold;}

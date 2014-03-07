@@ -1,0 +1,331 @@
+
+.profile {
+
+}
+
+.profile__header-wrap {
+    text-align: center;
+    padding: 66px 0 64px 0;
+    position: relative;
+}
+
+.profile__header {
+    font: bold 50px 'AvantGardeGothicC-Bold';
+    color: #ff3e64;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.profile__header-text {
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    color: #5d6276;
+    text-transform: uppercase;
+}
+
+.profile__packet-control {
+    position: absolute;
+    top: 66px;
+    right: 46px;
+}
+
+.profile__packet-name {
+    padding: 18px 28px;
+    color: #fefefe;
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    background-color: #2e3242;
+    display: inline-block;
+    border-radius: 2px 0 0 2px;
+    vertical-align: top;
+    cursor: default;
+}
+
+.profile__packet-improve.active {
+    background-color: #252835;
+}
+
+.profile__packet-improve {
+    padding: 18px 32px 18px 58px;
+    color: #fefefe !important;
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 0 2px 2px 0;
+    vertical-align: top;
+    background: url(/img/main/diagram-ico.png) #2e3242 27px center no-repeat;
+}
+
+.profile__packet-list {
+    display: table;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.profile__packet-list_hidden {
+    display: none;
+}
+
+.profile__packet-list-item {
+    position: relative;
+    display: table-cell;
+    width: 18%;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+    height: 284px;
+    z-index: 1;
+}
+
+.profile__packet-list-item:last-child {
+    border-left: none;
+}
+
+.profile__packet-list-item.active {
+    width: 26%;
+}
+
+.profile__packet-list-item.active .profile__packet-item-wrap {
+    background-color: #e8e8e8;
+}
+
+.profile__packet-list-item.active .profile__packet-item-wrap:after {
+    position: absolute;
+    top: -11px;
+    left: 60%;
+    border-bottom: 11px solid #e8e8e8;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: '';
+}
+
+.profile__packet-item-wrap {
+    height: 139px;
+    background-color: #f5f5f5;
+    padding: 39px 39px 52px 38px;
+    position: relative;
+}
+
+.profile__packet-item-name {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.profile__packet-item-description {
+    color: #5d6276;
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile__packet-cost {
+    color: #000;
+    font: bold 30px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 41px;
+}
+
+.profile__packet-sup {
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    color: #868998;
+    margin-left: 10px;
+    text-transform: none;
+}
+
+.profile__packet-button {
+    background-color: #ff3e64;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff !important;
+    text-transform: uppercase;
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    cursor: pointer;
+    border-radius: 2px;
+    display: block;
+}
+
+.profile__packet-button-wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.profile__packet-info {
+    cursor: pointer;
+    background: url(/img/main/info-ico.png);
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.profile__packet-info-text {
+    position: absolute;
+    border-radius: 3px;
+    background-color: #000;
+    top: 25px;
+
+    color: #fff;
+    padding: 25px;
+    display: none;
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    z-index: 10;
+    line-height: 18px;
+}
+
+.profile__packet-info-text:after {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-bottom: 11px solid #000;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: '';
+}
+
+.profile__packet-info-text_margin:after {
+    margin-left: -30px;
+}
+
+
+.profile__content-header {
+    font: bold 36px 'AvantGardeGothicC-Bold';
+    color: #000;
+    margin-bottom: 58px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.profile__access {
+    text-align: center;
+    margin-bottom: 71px;
+    padding: 0 0 75px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.profile__access-item {
+    display: inline-block;
+    text-align: left;
+    margin-left: 116px;
+}
+
+.profile__packet-cell-wrap {
+    position: relative;
+}
+
+.profile__access-item:first-child {
+    margin-left: 0;
+}
+
+.profile__access-header {
+    font: bold 12px 'AvantGardeGothicC-Bold';
+    color: #5d6276;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.profile__access-value {
+    font: bold 16px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    color: #000;
+}
+
+.profile__user-instruction {
+    padding: 0 40px 42px 40px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.profile__user-instruction-item {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 0 17px 39px 0;
+    vertical-align: top;
+    font: bold 16px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.profile__user-instruction-item-wrap {
+    width: 250px;
+    height: 162px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile__history-payment {
+    margin-bottom: 60px;
+}
+
+.profile__history-payment-item:first-child {
+    border-top: none;
+}
+
+.profile__history-payment-item {
+    font: bold 16px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+    padding: 0 0 0 44px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.profile__history-payment-item_header {
+    color: #5d6276;
+    font: bold 12px 'AvantGardeGothicC-Bold';
+}
+
+.profile__history-payment-item > div {
+    padding: 25px 8px 25px 0;
+    vertical-align: top;
+}
+
+.profile__history-payment-item_header > div {
+    padding: 15px 8px 18px 0;
+    vertical-align: top;
+}
+
+.profile__history-payment-name {
+    display: inline-block;
+    width: 64%;
+
+}
+
+.profile__history-payment-price {
+    display: inline-block;
+    width: 11%;
+}
+
+.profile__history-payment-date {
+    display: inline-block;
+    width: 11%;
+}
+
+.profile__history-payment-item_header .profile__history-payment-check {
+    background-image: none;
+    padding-top: 15px !important;
+    padding-left: 0 !important;
+    color: #5d6276 !important;
+}
+
+.profile__history-payment-check {
+    display: inline-block;
+    width: 6%;
+    background: url(/img/main/pdf-check.png) 0 center no-repeat;
+    color: #000 !important;
+    padding: 25px 0 25px 29px !important;
+}
+
+.scroll-inner {
+    position: relative;
+    margin-bottom: 20px;
+}

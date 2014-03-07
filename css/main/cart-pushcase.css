@@ -1,0 +1,411 @@
+/*
+    last edit 01.03.2013
+
+*/
+
+.placeholder {
+    color: #b8b8b8 !important;
+    text-transform: uppercase;
+}
+
+::-moz-placeholder {
+    color: #b8b8b8;
+    text-transform: uppercase;
+}
+
+
+::-webkit-input-placeholder {
+    color: #b8b8b8;
+    text-transform: uppercase;
+}
+
+::-o-placeholder {
+    color: #b8b8b8;
+}
+
+textarea::-o-placeholder {
+    color: #b8b8b8;
+    text-decoration: underline;
+}
+
+:-ms-input-placeholder {
+    color: #b8b8b8;
+}
+
+textarea:-ms-input-placeholder {
+    text-decoration: underline;
+}
+
+.cart-pushcase__form {
+    width: 784px;
+    margin: -22px auto 148px auto;
+}
+
+.cart-pushcase__fieldset-row {
+    margin-bottom: 21px;
+}
+
+.cart-pushcase__fieldset:first-child {
+    margin-left: 3px;
+}
+
+.cart-pushcase__fieldset {
+    width: 371px;
+    height: 49px;
+    display: inline-block;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: bottom;
+    margin-left: 36px;
+    position: relative;
+}
+
+.cart-pushcase__select-element {
+    display: none;
+}
+
+
+.cart-pushcase__select_open {
+    color: #fff !important;
+}
+
+.cart-pushcase__select_open:after {
+    background-position: 0 -38px;
+}
+
+
+.cart-pushcase__select-element-value:after {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    width: 11px;
+    height: 9px;
+    background: url(/img/main/authors-list-popup-arrows.png) 0 0;
+    content: '';
+}
+
+.cart-pushcase__select_placeholer {
+    color: #b8b8b8;
+}
+
+.cart-pushcase__input {
+    font: bold 18px 'AvantGardeGothicC-Bold' !important;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.cart-pushcase__fieldset_textarea {
+    width: 784px;
+    min-height: 156px;
+    border: none;
+}
+
+.cart-pushcase__textarea {
+    width: 784px;
+    border: none;
+    background: url(/img/main/cart-pushcase-textarea.png);
+    min-height: 156px;
+    color: #000;
+    font: bold 18px/40PX 'AvantGardeGothicC-Bold' !important;
+    line-height: 40px;
+    padding: 6px 0 0 0;
+    text-transform: uppercase;
+}
+
+.cart-pushcase_textarea {
+    margin: 29px 0 44px 0;
+}
+
+.cart-pushcase__button {
+    border: none;
+    width: 229px;
+}
+
+.cart-pushcase__submit-wrap {
+    margin: 80px 0 71px 0;
+    text-align: center;
+}
+
+.cart-pushcase__button-submit {
+    display: inline-block;
+    position: relative;
+    width: 242px;
+    padding: 19px 0;
+    background: #2e3242;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+}
+
+.cart-pushcase__button-submit-text {
+    color: #fefefe;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart-pushcase__button-submit-sum {
+    color: #7b819a;
+}
+
+.cart-pushcase__bank-card-list {
+    text-align: center;
+}
+
+.cart-pushcase__bank-card-item {
+    display: inline-block;
+}
+
+.jui-custom-select {
+    position: absolute;
+    width: 371px;
+    top: 0;
+    border-radius: 3px;
+    margin-right: 0;
+    padding: 20px 26px 20px 26px;
+    margin: -26px 0 0 -26px;
+    z-index: 1;
+    max-height: 285px;
+    overflow: hidden;
+    -webkit-transition: color 0.3s, background-color 0.3s;
+    -moz-transition: color 0.3s, background-color 0.3s;
+    -o-transition: color 0.3s, background-color 0.3s;
+    -ms-transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.jui-custom-select__scroll {
+    position: absolute;
+    right: 8px;
+    top: 75px;
+    width: 15px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: default;
+    display: none;
+    z-index: 2;
+}
+
+.jui-custom-select_open {
+    background-color: #000;
+}
+
+.jui-custom-select_open .jui-custom_placeholder {
+    color: #fff;
+}
+
+.jui-custom_placeholder {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #b8b8b8;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    line-height: 49px;
+
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.jui-custom-select_open .jui-custom_placeholder:after {
+    background-position: 0 -38px;
+}
+
+.jui-custom-select_open .jui-custom-select__list-wrap {
+    display: block;
+}
+
+.jui-custom_placeholder:after {
+    position: absolute;
+    right: 0;
+    top: 19px;
+    width: 11px;
+    height: 9px;
+    background: url(/img/main/authors-list-popup-arrows.png) 0 0;
+    content: '';
+}
+
+.jui-custom-select__list {
+    display: none;
+    left: 11px;
+    right: 11px;
+}
+
+.jui-custom-select__item {
+    color: #fff;
+    font: bold 18px 'AvantGardeGothicC-Bold' !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0 8px 10px;
+    margin: 0 0 0 -10px;
+    border-radius: 4px;
+    -webkit-transition: color 0.3s, background-color 0.3s;
+    -moz-transition: color 0.3s, background-color 0.3s;
+    -o-transition: color 0.3s, background-color 0.3s;
+    -ms-transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.jui-custom-select__item:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.jui-custom-select__list-wrap {
+    position: relative;
+    overflow: hidden;
+    padding-left: 11px;
+    margin-left: -11px;
+    display: none;
+}
+
+.jui-custom_selected {
+    color: #000;
+}
+
+.cart-pushcase__invalid-field {
+    border-bottom-color: #f00;
+}
+
+.cart-pushcase_form-invalid {
+    top: 15px;
+    right: 15px;
+}
+
+.cart-pushcase__input_complete {
+    color: #000 !important;
+}
+
+.cart-pushcase__input_site {
+    padding-left: 31px !important;
+    background: url(/img/main/authors-profile-site-label.png) 0 center no-repeat;
+}
+
+.cart-pushcase__input_facebook {
+    padding-left: 31px !important;
+    background: url(/img/main/authors-profile-facebook-label.png) 0 center no-repeat;
+}
+
+.cart-pushcase__input_twitter {
+    padding-left: 31px !important;
+    background: url(/img/main/authors-profile-twitter-label.png) 0 center no-repeat;
+}
+
+.cart-pushcase__input_vk {
+    padding-left: 31px !important;
+    background: url(/img/main/authors-profile-vk-label.png) 0 center no-repeat;
+}
+
+.cart-pushcase__input_month,
+.cart-pushcase__input_day,
+.cart-pushcase__input_year {
+    font: bold 14px 'AvantGardeGothicC-Bold' !important;
+    text-align: center;
+}
+
+.cart-pushcase__fieldset__text {
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    color: #000;
+    display: inline-block;
+    height: 34px;
+    text-transform: uppercase;
+}
+
+/*---------------------------------------------- profile settings  ---------------------------------------------------*/
+
+.profile-settings {
+    padding-top: 66px;
+}
+
+.profile-settings__header {
+    margin-bottom: 34px;
+    padding-bottom: 31px;
+    position: relative;
+}
+
+.profile-settings__header-title {
+    font: bold 50px 'AvantGardeGothicC-Bold';
+    color: #ff3e64;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.profile-sittings_submit {
+    width: 189px;
+    height: auto;
+}
+
+.profile-settings__form {
+    width: 784px;
+    margin: 0 auto 148px auto;
+}
+
+.profile-settings_tooltip {
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -42px;
+}
+
+/*----------------------------------------------/profile settings  ---------------------------------------------------*/
+
+/*---------------------------------------- profile services membership -----------------------------------------------*/
+
+
+.profile-services {
+    padding-top: 66px;
+}
+
+.profile-services__header {
+    margin-bottom: 0;
+    padding-bottom: 43px;
+    position: relative;
+}
+
+
+.profile-services__header-title {
+    font: bold 50px 'AvantGardeGothicC-Bold';
+    color: #ff3e64;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.profile-services__form {
+    width: 784px;
+    margin: 0 auto 148px auto;
+}
+
+
+.profile-services-membership_day {
+    width: 61px;
+}
+
+.profile-services-membership_month {
+    width: 80px;
+    margin-left: 0;
+    font: bold 14px 'AvantGardeGothicC-Bold' !important;
+}
+
+.profile-services-membership_year {
+    width: 100px;
+    margin: 0 26px 0 6px;
+    font: bold 14px 'AvantGardeGothicC-Bold' !important;
+}
+
+.profile-services-membership_submit {
+    width: 186px;
+}
+
+/*---------------------------------------- profile services membership -----------------------------------------------*/

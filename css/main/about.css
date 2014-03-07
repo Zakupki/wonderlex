@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* ---------------- about --------------- */
+.about {
+    color: #000;
+    padding: 77px 55px 0;
+}
+.about__pdf,
+.about__pdf:visited,
+.about__pdf:hover {
+    position: absolute;
+    top: 83px;
+    right: 55px;
+    background: #2e3242 url("/img/main/about__pdf.png") no-repeat 18px center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 0 23px 0 58px;
+}
+.about__title{
+    color: #ff3e64;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+.about__txt {
+    font-family: "MaiolaPro", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.about__quote {
+    font-family: "MaiolaPro-italic", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    width: 730px;
+    margin: 0 auto 103px;
+    line-height: 55px;
+    padding: 49px 90px 74px 90px;
+    position: relative;
+}
+.about__quote-prev,
+.about__quote-next {
+    position: absolute;
+    top: 104px;
+    cursor: pointer;
+    background: url(/img/main/about__quote.png);
+    height: 62px;
+    width: 33px;
+}
+.about__quote-prev{
+    left: 0;
+}
+.about__quote-next {
+    right: 0;
+    background-position: right 0;
+}
+.about__quote-author {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "AvantGardeGothicC-Bold", Arial, Helvetica, sans-serif;
+}
+.about__quote-pic {
+    position: absolute;
+    border-radius: 44px;
+    width: 44px;
+    height: 44px;
+    left: -61px;
+    top: 1px;
+}
+.about__quote-name {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.about__quote-place {
+    font-size: 11px;
+    color: #899096;
+}
+.about__list{
+    padding: 40px 0 0 0;
+}
+.about__list-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 360px;
+    padding: 0 103px 47px 0px;
+}
+.about__list-title {
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    padding-left: 37px;
+}
+.about__list-title:after {
+    content: '';
+    background: url("/img/main/about__list-item.png") no-repeat 0 0;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+.about__list-item:nth-child(3n-1) .about__list-title:after {
+    background-position: 0 -28px;
+}
+.about__list-item:nth-child(4n-1) .about__list-title:after {
+    background-position: 0 -56px;
+}
+.about__list-item:nth-child(5n-1) .about__list-title:after {
+    background-position: 0 -84px;
+}
+.about__list-item:nth-child(6n-1) .about__list-title:after {
+    background-position: 0 -112px;
+}
+.about__list-txt {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "MaiolaPro", Arial, Helvetica, sans-serif;
+}
+.about__quote-item {
+    display: none;
+    position: absolute;
+    top: 49px;
+    left: 90px;
+    width: 730px;
+}
+.about__quote-item_active {
+    display: block;
+}
+/* --------------- /about --------------- */

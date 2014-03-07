@@ -1,0 +1,118 @@
+/* css for ltie8 */
+.authors__gallery-btn,
+.authors__gallery-pager {
+    -ms-filter:filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.language__lnk,
+.language__lnk:visited,
+.authors:hover .authors__gallery-btn,
+.main-menu__sub-lnk:hover{
+    -ms-filter:filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+}
+
+.gallery__lnk,
+.gallery__lnk:visited,
+.social__item{
+    -ms-filter:filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.language__lnk:hover,
+.gallery__lnk:hover,
+.authors:hover .authors__gallery-btn:hover,
+.authors:hover .authors__gallery-pager,
+.social__item:hover,
+.social__item_active,
+.main-menu__sub-lnk,
+.main-menu__sub-lnk:visited{
+    -ms-filter:filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+.gallery__wrap-element {
+    z-index: -1;
+}
+.authors__gallery-pager-item {
+    background: url("../img/authors__gallery-pager-item.png");
+}
+.authors__gallery-pager-item_active {
+    background-position: 0 bottom;
+}
+.login .login__input {
+    line-height: 64px;
+}
+.scroll {
+    overflow-y: scroll;
+}
+.scroll > div:first-child {
+    padding: 0 !important;
+}
+/* ---------------------------------------------- authors profile ----------------------------------------------------*/
+
+.authors-profile__photo {
+    z-index: 1;
+}
+
+.authors-profile__photo img {
+    position: relative;
+    z-index: -1;
+}
+
+.authors-profile-comments__author-photo {
+    z-index: 1;
+    position: absolute;
+}
+
+.authors-profile-comments__author-photo img {
+    z-index: -1;
+    position: relative;
+}
+
+.authors-profile-comments__textarea {
+    width: 92%;
+}
+
+/* ----------------------------------------------/authors profile ----------------------------------------------------*/
+
+/* ---------------------------------------------- basket purchase ----------------------------------------------------*/
+.jui-custom-select__item:hover {
+    background: url(../img/cart-pushcase-select-item.png) -1px -1px no-repeat #000;
+
+}
+
+.jui-custom-select__scroll {
+    background: url(../img/cart-pushcase-select-scroll.png) no-repeat #000;
+}
+
+.cart-pushcase__input {
+    padding-top: 13px !important;
+}
+
+.cart-pushcase__input_password,
+.cart-pushcase__input_confirm-password {
+    font-family: 'Arial' !important;
+}
+
+
+/* ----------------------------------------------/basket purchase ----------------------------------------------------*/
+
+/* --------------------------------------------- profile settings ----------------------------------------------------*/
+
+.cart-pushcase__input_site {
+    background-position: 0 15px;
+}
+
+.cart-pushcase__input_facebook {
+    background-position: 0 15px;
+}
+
+.cart-pushcase__input_twitter {
+    background-position: 0 15px;
+}
+
+.cart-pushcase__input_vk {
+    background-position: 0 15px;
+}
+
+/* ---------------------------------------------/profile settings ----------------------------------------------------*/

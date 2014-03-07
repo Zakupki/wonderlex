@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS ltie10 */
+
+@font-face {
+    font-family: "AvantGardeGothicC-Bold";
+    src: url("../fonts/avant-garde-gothic-c-bold.eot");
+}
+@font-face {
+    font-family: "MaiolaPro";
+    src: url("../fonts/maiola-pro.eot");
+}
+@font-face {
+    font-family: "MaiolaPro-italic";
+    src: url("../fonts/maiolapro-italic.eot");
+}

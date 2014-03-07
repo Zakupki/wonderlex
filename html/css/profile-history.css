@@ -1,0 +1,184 @@
+/*
+    last edit 05.03.2013
+
+*/
+
+.profile-history {
+    padding-top: 66px;
+}
+
+.profile-history__header {
+    padding-bottom: 54px;
+    position: relative;
+}
+
+.profile-history__header-title {
+    font: bold 50px 'AvantGardeGothicC-Bold';
+    color: #ff3e64;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.profile-history__header-control {
+    text-align: center;
+}
+
+.profile-history__header-control-text {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #a3a3a3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.profile-history__header-control_active {
+    color: #000;
+    cursor: default;
+}
+
+.profile-history__header-control-wrap {
+    display: inline-block;
+    width: 51px;
+    height: 12px;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    position: relative;
+    margin: 4px 7px 0 13px;
+    padding: 1px 0 0 0px;
+}
+
+.profile-history__header-button {
+    top: 1px;
+    left: 1px;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+
+    background: url(/img/main/profile-history-control-button.png);
+}
+
+.profile-history__header-control-text {
+
+}
+
+.profile-history__list {
+    border-top: 1px solid #e9e9e9;
+    margin-bottom: 111px;
+    display: none;
+}
+
+.profile-history__list-active {
+    display: block;
+}
+
+.profile-history__item {
+    position: relative;
+    vertical-align: top;
+    padding: 20px 0 16px 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.profile-history__img-wrap {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-history__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+
+.profile-history__item-name {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.profile-history__author-name {
+    color: #a3a3a3;
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: block;
+    margin-top: 7px;
+}
+
+.profile-history__price-date {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-history__price {
+    text-transform: uppercase;
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #000;
+}
+
+.profile-history__date {
+    color: #a3a3a3;
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: block;
+    margin-top: 7px;
+}
+
+.profile-history__remove-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(/img/main/profile-history-remove-button.png);
+    cursor: pointer;
+}
+
+.profile-history__list-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-history_tooltip {
+    right: 33px;
+    top: 50%;
+    margin-top: -18px;
+    width: 14%;
+}
+
+.profile-history_item-new {
+    display: none;
+}
+
+.profile-history_preloader {
+    height: 50px;
+    position: absolute;
+    width: 137px;
+    margin-left: -68.5px;
+    bottom: 40px;
+    left: 50%;
+    background: url("/img/main/gallery__preloader.gif") no-repeat left center;
+    display: none;
+}
+
+
+
+.profile-history__header-control-slider {
+    width: 26px;
+    position: relative;
+    height: 11px;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.ui-slider-handle a {
+    top: 0 !important;
+    background-color: #000;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 10px !important;
+    margin-left: -5px;
+}

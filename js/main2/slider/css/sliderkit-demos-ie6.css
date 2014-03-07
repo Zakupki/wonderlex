@@ -1,0 +1,6 @@
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+.photosgallery-captions .sliderkit-btn-disable a{filter:alpha(opacity=30);}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{filter:alpha(opacity=40);}
+.photosgallery-captions .sliderkit-nav .sliderkit-btn a{background-image:url("../images/arrows-h-black.gif");}

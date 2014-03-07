@@ -1,0 +1,5 @@
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+.photosgallery-captions .sliderkit-btn-disable a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";}

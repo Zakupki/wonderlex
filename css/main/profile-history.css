@@ -1,0 +1,194 @@
+/*
+    last edit 05.03.2013
+
+*/
+
+.profile-history {
+    padding-top: 66px;
+}
+
+.profile-history__header {
+    padding-bottom: 54px;
+    position: relative;
+}
+
+.profile-history__header-title {
+    font: bold 50px 'AvantGardeGothicC-Bold';
+    color: #ff3e64;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.profile-history__header-control {
+    text-align: center;
+}
+
+.profile-history__header-control-text {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #a3a3a3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.profile-history__header-control_active {
+    color: #000;
+    cursor: default;
+}
+
+.profile-history__header-control-wrap {
+    display: inline-block;
+    width: 51px;
+    height: 12px;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    position: relative;
+    margin: 4px 7px 0 13px;
+    padding: 1px 0 0 0px;
+}
+
+.profile-history__header-button {
+    top: 1px;
+    left: 1px;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+
+    background: url(/img/main/profile-history-control-button.png);
+}
+
+.profile-history__header-control-text {
+
+}
+
+.profile-history__list {
+    border-top: 1px solid #e9e9e9;
+    margin-bottom: 111px;
+    display: none;
+}
+
+.profile-history__list-active {
+    display: block;
+}
+
+.profile-history__item {
+    position: relative;
+    vertical-align: top;
+    padding: 20px 0 16px 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.profile-history__img-wrap {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-history__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+
+.profile-history__img-wrap:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlBNThGODRFMzBEMTFFMjlCMUQ4QjA3M0VDMzUwNjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzlBNThGODVFMzBEMTFFMjlCMUQ4QjA3M0VDMzUwNjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDOUE1OEY4MkUzMEQxMUUyOUIxRDhCMDczRUMzNTA2MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOUE1OEY4M0UzMEQxMUUyOUIxRDhCMDczRUMzNTA2MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtGepRMAAACsSURBVHja7NrBCcJgEITR0XMg4CmQDlKC4EWwAEFIk3ZhB4JgAZ4FK4gzmAY87s83MLDHfex1tfzycmd3dFWk47pzdl827lPS3n2rZnbuLZCLh6tq5xxI7+FTHNIFohayVSMBAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgPwH6RtwdIEcG4Cc8ovy8HBQ8TenXGRy727enYZCgGHdObtPXwEGAM3dtNx7tZIZAAAAAElFTkSuQmCC) no-repeat;
+    width: 50px;
+    height: 50px;
+    content: '';
+}
+
+.profile-history__item-name {
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.profile-history__author-name {
+    color: #a3a3a3;
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: block;
+    margin-top: 7px;
+}
+
+.profile-history__price-date {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-history__price {
+    text-transform: uppercase;
+    font: bold 18px 'AvantGardeGothicC-Bold';
+    color: #000;
+}
+
+.profile-history__date {
+    color: #a3a3a3;
+    font: bold 14px 'AvantGardeGothicC-Bold';
+    text-transform: uppercase;
+    display: block;
+    margin-top: 7px;
+}
+
+.profile-history__remove-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(/img/main/profile-history-remove-button.png);
+    cursor: pointer;
+}
+
+.profile-history__list-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-history_tooltip {
+    right: 33px;
+    top: 50%;
+    margin-top: -18px;
+    width: 14%;
+}
+
+.profile-history_item-new {
+    display: none;
+}
+
+.profile-history_preloader {
+    height: 50px;
+    position: absolute;
+    width: 137px;
+    margin-left: -68.5px;
+    bottom: 40px;
+    left: 50%;
+    background: url("/img/main/gallery__preloader.gif") no-repeat left center;
+    display: none;
+}
+
+
+
+.profile-history__header-control-slider {
+    width: 26px;
+    position: relative;
+    height: 11px;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.ui-slider-handle a {
+    top: 0 !important;
+    background-color: #000;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 10px !important;
+    margin-left: -5px;
+}
